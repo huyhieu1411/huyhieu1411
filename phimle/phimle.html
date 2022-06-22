@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap&subset=vietnamese"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="phimle.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <title>HUYHIEU.NET</title>
+</head>
+
+<body>
+    <div id="scrollPath"></div>
+    <div id="progressbar"></div>
+    <header class="header">
+        <div class="header-with-search">
+            <div class="header__logo">
+                <a href="http://127.0.0.1:5500/index.html" class="header__logo-link">
+                    <div class="header__logo-text">
+                        <b>HUYHIEU.</b>
+                        <span>NET</span>
+                    </div>
+                </a>
+            </div>
+            <div class="header__search">
+                <div class="header__search-input-wrap">
+                    <input type="text" class="header__search-input"
+                        placeholder="Tìm kiếm phim, tv show hoặc người nổi tiếng" />
+                    <div class="header__search-history"></div>
+                </div>
+                <a href="">
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fas fa-search"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="header__navbar">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item">
+                    <a href="">Thể Loại
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="header__navbar-sub-list">
+                        <div class="sub-list-wrap-1">
+                            <li class="header__navbar-sub-item">
+                                <a href="">Tình cảm - lãng mạn</a>
+                            </li>
+                            <li class="header__navbar-sub-item"><a href="">Hài Hước</a></li>
+                            <li class="header__navbar-sub-item">
+                                <a href="">Học Đường</a>
+                            </li>
+                            <li class="header__navbar-sub-item">
+                                <a href="">Phiêu lưu</a>
+                            </li>
+                            <li class="header__navbar-sub-item"><a href="">Webdrama</a></li>
+                        </div>
+                        <div class="sub-list-wrap-2">
+                            <li class="header__navbar-sub-item"><a href="">Võ Thuật</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Gia Đình</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Giải Trí</a></li>
+                            <li class="header__navbar-sub-item">
+                                <a href="">Thần Thoại</a>
+                            </li>
+                            <li class="header__navbar-sub-item">
+                                <a href="">Đam Mỹ - Bách Hợp</a>
+                            </li>
+                        </div>
+                        <div class="sub-list-wrap-3">
+                            <li class="header__navbar-sub-item"><a href="">Cổ trang</a></li>
+                            <li class="header__navbar-sub-item">
+                                <a href="">Chiến Tranh</a>
+                            </li>
+                            <li class="header__navbar-sub-item"><a href="">Hình Sự</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Tâm Lý</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="header__navbar-item">
+                    <a href="">Quốc Gia
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="header__navbar-sub-list">
+                        <div class="sub-list-wrap-1">
+                            <li class="header__navbar-sub-item"><a href="">Hàn Quốc</a></li>
+                            <li class="header__navbar-sub-item">
+                                <a href="">Trung Quốc</a>
+                            </li>
+                            <li class="header__navbar-sub-item"><a href="">Ấn Độ</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Tất Cả</a></li>
+                        </div>
+                        <div class="sub-list-wrap-2">
+                            <li class="header__navbar-sub-item"><a href="">Nhật Bản</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Mỹ</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Philipin</a></li>
+                        </div>
+                        <div class="sub-list-wrap-3">
+                            <li class="header__navbar-sub-item"><a href="">Thái Lan</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Việt Nam</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Âu Mỹ</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="header__navbar-item"><a href="http://127.0.0.1:5500/phimbo/phimbo.html">Phim Bộ</a></li>
+                <li class="header__navbar-item"><a href="http://127.0.0.1:5500/phimle/phimle.html">Phim Lẻ</a></li>
+                <li class="header__navbar-item"><a href="http://127.0.0.1:5500/phimsapchieu/phimsapchieu.html">Phim Sắp Chiếu</a></li>
+                <li class="header__navbar-item"><a href="http://127.0.0.1:5500/tvshow/tvshow.html">TV Show</a></li>
+                <li class="header__navbar-item"><a href="http://127.0.0.1:5500/anime/anime.html">Hoạt Hình - Anime</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- container -->
+    <div class="app">
+        <div class="container-box">
+            
+            <div class="container-box-app container-box-app--dark">
+                <div class="container__heading-box">
+                    <b>Phim Lẻ</b>
+                    
+                </div>
+                <div class="slider ">
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://play-lh.googleusercontent.com/UvFglsRsyjvoaZQq2ewpIftHud4zWJoqFpoqVjoGsM7O8YAM_nfS-HeyHfCGl3MBKZnx" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Full Thuyết Minh</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Biệt Đội Siêu Anh Hùng 4 : Hồi Kết
+                            </div>
+                            <div class="sub-title">
+                                Avengers : Endgame
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/627e5ea4fdee6509d4e57fd1_MAN.jpg" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Full Thuyết Minh</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Chiến Thần Phương Bắc
+                            </div>
+                            <div class="sub-title">
+                                The Northman
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5f5f5cdcacc39964018b4569_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Full Vietsub</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Ác Quỷ Đối Đầu (Truy Cùng Giết Tận)
+                            </div>
+                            <div class="sub-title">
+                                Deliver Us from Evil
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5d876aca0df9385704f41333_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Full Thuyết Minh</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Truy Tìm Phép Thuật
+                            </div>
+                            <div class="sub-title">
+                                Onward (2020)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5ffc2ceaacc3993b998b4577_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Thất Nghiệp Chuyển Sinh
+                            </div>
+                            <div class="sub-title">
+                                Mushoku Tensei: Jobless Reincarnation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-box-app">
+                <div class="slider ">
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5fbdd196acc399e00b8b4594_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Full Vietsub</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Quái Đản
+                            </div>
+                            <div class="sub-title">
+                                Freaky (2020)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5fee070aacc399fc598b4569_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Full Vietsub</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Chú Ngựa Đen Beauty
+                            </div>
+                            <div class="sub-title">
+                                Black Beauty (2020)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5fc58baeacc39908da8b4583_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Tiền Bối, Đừng Đánh Màu Son Đó
+                            </div>
+                            <div class="sub-title">
+                                Sunbae, Don't Put On That Lipstick (2021)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5ff4223aacc39929278b456e_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Hạnh Phúc Nhỏ Của Anh
+                            </div>
+                            <div class="sub-title">
+                                My Little Happiness (2021)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5ffc2ceaacc3993b998b4577_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Thất Nghiệp Chuyển Sinh
+                            </div>
+                            <div class="sub-title">
+                                Mushoku Tensei: Jobless Reincarnation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-box-app container-box-app--dark">
+                
+                <div class="slider ">
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5ef39a3facc399ea668b4630_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Ta chính là cô nương như thế
+                            </div>
+                            <div class="sub-title">
+                                I Am Just This Type of Girl (Con Gái Là Thế Đó)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5f93af9dacc3998db58b45a3_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Lĩnh vực
+                            </div>
+                            <div class="sub-title">
+                                Spirit Realm (The World of Fantasy)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5fc58baeacc39908da8b4583_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Tiền Bối, Đừng Đánh Màu Son Đó
+                            </div>
+                            <div class="sub-title">
+                                Sunbae, Don't Put On That Lipstick (2021)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5ff4223aacc39929278b456e_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Hạnh Phúc Nhỏ Của Anh
+                            </div>
+                            <div class="sub-title">
+                                My Little Happiness (2021)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5ffc2ceaacc3993b998b4577_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Thất Nghiệp Chuyển Sinh
+                            </div>
+                            <div class="sub-title">
+                                Mushoku Tensei: Jobless Reincarnation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-box-app">
+                
+                <div class="slider ">
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5e72f81dacc3993f6c8b4689_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 125</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Run BTS!
+                            </div>
+                            <div class="sub-title">
+                                Run BTS
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5ceb9b830df938c41b318177_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 529 Preview</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Running Man (Hàn Quốc): Thử Thách Thần Tượng
+                            </div>
+                            <div class="sub-title">
+                                Running Man Vietsub
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5e43ceaf0df938f7711f8832_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 56 Preview</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Delicious Rendezvous
+                            </div>
+                            <div class="sub-title">
+                                Delicious Rendezvous (2019)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5ffc2ceaacc3993b998b4577_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Thất Nghiệp Chuyển Sinh
+                            </div>
+                            <div class="sub-title">
+                                Mushoku Tensei: Jobless Reincarnation
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5c9ca410acc399eab98b456e_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Đảo Hải Tặc
+                            </div>
+                            <div class="sub-title">
+                                One Piece
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-box-app container-box-app--dark">
+               
+                <div class="slider ">
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5fe6bb2dacc39999568b4570_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 7</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Tà Vương Truy Thế: Nhất Thế Khuynh Thành
+                            </div>
+                            <div class="sub-title">
+                                Be My Wife (Xie Wang Zhui Qi 2)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5ff69331acc3991b4a8b456b_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 5</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Tinh Hài Kỵ Sĩ
+                            </div>
+                            <div class="sub-title">
+                                Xing Hai Qi Shi (Knights on Debris) (2020)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5fc58baeacc39908da8b4583_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Tiền Bối, Đừng Đánh Màu Son Đó
+                            </div>
+                            <div class="sub-title">
+                                Sunbae, Don't Put On That Lipstick (2021)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5c9ca410acc399eab98b456e_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Đảo Hải Tặc
+                            </div>
+                            <div class="sub-title">
+                                One Piece
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="img">
+                            <img src="https://media.voocdn.com/media/image/id/5ffc2ceaacc3993b998b4577_300x" alt="" />
+                        </div>
+                        <i class="card__icon fas fa-play-circle"></i>
+                        <div class="card__ep">
+                            <span class="card__ep-name">Tập 6</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                Thất Nghiệp Chuyển Sinh
+                            </div>
+                            <div class="sub-title">
+                                Mushoku Tensei: Jobless Reincarnation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center-foot">
+                <nav>
+                    <ul class="pagination">
+                        <li class="active"><a href="">1</a></li>
+                        <li class="active"><a href="">2</a></li>
+                        <li class="active"><a href="">3</a></li>
+                        <li class="active"><a href="">4</a></li>
+                        <li class="active"><a href="">5</a></li>
+                        <li class="active"><a href="">Tiếp >></a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__left">
+            <div class="header__logo-text">
+                <b>HUYHIEU.</b>
+                <span>NET</span>
+            </div>
+            <p class="par">Nơi cập nhật những bộ phim mới hot nhất hiện nay.</p>
+        </div>
+        <div class="footer__right">
+            <span class="footer__right-name">Thông Tin</span>
+            <ul class="footer__right-list">
+                <li class="footer__right-item">
+                    <a href="#">Điều khoản sử dụng</a>
+                </li>
+                <li class="footer__right-item">
+                    <a href="#">Bản quyền và trách nhiệm nội dung</a>
+                </li>
+                <li class="footer__right-item">
+                    <a href="#">Admin: ads@huyhieu.net</a>
+                </li>
+                <li class="footer__right-item">
+                    <a href="#">Liên hệ QC: ads.movies888@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footer1">
+        <div class="footer1-left">
+            <p>
+                © 2022 Copyright
+                <a href="#">
+                    <b class="ft-name">huyhieu.net</b>
+                </a>
+                . All Rights reserved.
+            </p>
+        </div>
+        <div class="footer1-right">
+            <a href="#">Back to top
+                <i class="footer1-right__icon fas fa-angle-up"></i>
+            </a>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+            showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            // var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            // captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <!-- AUTOPLAY -->
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1;
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+    <script>
+        // $(".slider").owlCarousel({
+        //    loop: true,
+        //    center: true,
+
+        //   // autoplay: true,
+        //   // autoplayTimeout: 2000, //2000ms = 2s;
+        //   // autoplayHoverPause: true,
+        //   items:5
+        // });
+        $('.slider').owlCarousel({
+
+            items: 2,
+            loop: true,
+
+            responsive: {
+                600: {
+                    items: 5.5
+                }
+            }
+        });
+        owl.on('mousewheel', '.owl-stage', function (e) {
+            if (e.deltaY > 0) {
+                owl.trigger('next.owl');
+            } else {
+                owl.trigger('prev.owl');
+            }
+            e.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+<!-- SLIDE SHOWS -->
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap&subset=vietnamese"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="onepice.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <title>HUYHIEU.NET</title>
+</head>
+
+<body>
+    <div id="scrollPath"></div>
+    <div id="progressbar"></div>
+    <header class="header">
+        <div class="header-with-search">
+            <div class="header__logo">
+                <a href="http://127.0.0.1:5500/index.html" class="header__logo-link">
+                    <div class="header__logo-text">
+                        <b>HUYHIEU.</b>
+                        <span>NET</span>
+                    </div>
+                </a>
+            </div>
+            <div class="header__search">
+                <div class="header__search-input-wrap">
+                    <input type="text" class="header__search-input"
+                        placeholder="Tìm kiếm phim, tv show hoặc người nổi tiếng" />
+                    <div class="header__search-history"></div>
+                </div>
+                <a href="">
+                    <button class="header__search-btn">
+                        <i class="header__search-btn-icon fas fa-search"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="header__navbar">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item">
+                    <a href="">Thể Loại
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="header__navbar-sub-list">
+                        <div class="sub-list-wrap-1">
+                            <li class="header__navbar-sub-item">
+                                <a href="">Tình cảm - lãng mạn</a>
+                            </li>
+                            <li class="header__navbar-sub-item"><a href="">Hài Hước</a></li>
+                            <li class="header__navbar-sub-item">
+                                <a href="">Học Đường</a>
+                            </li>
+                            <li class="header__navbar-sub-item">
+                                <a href="">Phiêu lưu</a>
+                            </li>
+                            <li class="header__navbar-sub-item"><a href="">Webdrama</a></li>
+                        </div>
+                        <div class="sub-list-wrap-2">
+                            <li class="header__navbar-sub-item"><a href="">Võ Thuật</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Gia Đình</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Giải Trí</a></li>
+                            <li class="header__navbar-sub-item">
+                                <a href="">Thần Thoại</a>
+                            </li>
+                            <li class="header__navbar-sub-item">
+                                <a href="">Đam Mỹ - Bách Hợp</a>
+                            </li>
+                        </div>
+                        <div class="sub-list-wrap-3">
+                            <li class="header__navbar-sub-item"><a href="">Cổ trang</a></li>
+                            <li class="header__navbar-sub-item">
+                                <a href="">Chiến Tranh</a>
+                            </li>
+                            <li class="header__navbar-sub-item"><a href="">Hình Sự</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Tâm Lý</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="header__navbar-item">
+                    <a href="">Quốc Gia
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="header__navbar-sub-list">
+                        <div class="sub-list-wrap-1">
+                            <li class="header__navbar-sub-item"><a href="">Hàn Quốc</a></li>
+                            <li class="header__navbar-sub-item">
+                                <a href="">Trung Quốc</a>
+                            </li>
+                            <li class="header__navbar-sub-item"><a href="">Ấn Độ</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Tất Cả</a></li>
+                        </div>
+                        <div class="sub-list-wrap-2">
+                            <li class="header__navbar-sub-item"><a href="">Nhật Bản</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Mỹ</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Philipin</a></li>
+                        </div>
+                        <div class="sub-list-wrap-3">
+                            <li class="header__navbar-sub-item"><a href="">Thái Lan</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Việt Nam</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Âu Mỹ</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="header__navbar-item"><a href="http://127.0.0.1:5500/phimbo/phimbo.html">Phim Bộ</a></li>
+                <li class="header__navbar-item"><a href="http://127.0.0.1:5500/phimle/phimle.html">Phim Lẻ</a></li>
+                <li class="header__navbar-item"><a href="http://127.0.0.1:5500/phimsapchieu/phimsapchieu.html">Phim Sắp Chiếu</a></li>
+                <li class="header__navbar-item"><a href="http://127.0.0.1:5500/tvshow/tvshow.html">TV Show</a></li>
+                <li class="header__navbar-item"><a href="http://127.0.0.1:5500/anime/anime.html">Hoạt Hình - Anime</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="bg-img">
+        <div class="dynamic-header-overlay">
+            <div class="body w-body">
+                <div class="header-content-block">
+                    <div class="header-bg-img"></div>
+                    <h1 class="header-title">Vua Hải Tặc - One Piece</h1>
+                    <div class="info-wrapper on-review-page">
+                        <div class="info-block">
+                            <img class="info-block-icon stars-large"
+                                src="	https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5fe2d564b3fa64997fa12231_5-sao.png"
+                                alt="">
+                        </div>
+                        <div class="info-block">
+                            <img class="info-block-icon"
+                                src="	https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                alt="">
+                            <a class="info-title-link">Phim hoạt hình</a>
+                        </div>
+                        <div class="info-block">
+                            <img class="info-block-icon"
+                                src="	https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647cf1a11d0b_clock.svg"
+                                alt="">
+                            <div class="info-title-link">8/5/2022</div>
+                        </div>
+                    </div>
+                    <div class="header-info-block">
+                        <div class="header-info-item">
+                            <a class="button_trailer w-button" href="#trailer">Trailer</a>
+                            <a class="button_xemphim w-button" href="http://127.0.0.1:5500/onepice/play/play.html">Xem Phim</a>
+                        </div>
+                    </div>
+                    <div class="header-short-description w-richtext">
+                        <p>Thời lượng: 23 phút/tập</p>
+                        <br>
+                        <p>Đạo diễn: Eiichiro Oda</p>
+                        <br>
+                        <p>Quốc gia: Nhật Bản</p>
+                        <br>
+                        <p>Phát hành: 2000</p>
+                        <br>
+                        <p>Chất lượng: Bản đẹp</p>
+                        <br>
+                        <p>Ngôn ngữ: Phụ đề Việt</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="section review-section wf-section">
+        <div class="container w-container">
+            <div class="review-wrapper">
+                <div class="rtb w-richtext">
+                    <p>
+                        <strong>Vua hải Tặc - One Piece</strong> là bộ phim hoạt hình Nhật Bản dựa trên loạt manga cùng
+                        tên của tác giả Eiichiro Oda. Tác phẩm do nhiều đạo diễn tham gia chỉ đạo với phần kịch bản được
+                        chắp bút bởi Junki Takegami, Hirohiko Kamisaka, Shōji Yonemura. Bộ phim do Studio Toei Animation
+                        chịu trách nhiệm sản xuất.
+                    </p>
+                    <img src="	https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/609002f27c08fcc9a97b0948_one-piece-2.jpg"
+                        alt="">
+                    <p>Tại Nhật Bản, One Piece liên tục nằm trong số năm chương trình hoạt hình dẫn đầu về tỉ suất người xem truyền hình. Trên các nền tảng video quốc tế, anime One Piece có 1,9 triệu lượt yêu cầu mỗi tháng theo số liệu năm 2016, trở thành anime nổi tiếng nhất năm và chương trình truyền hình nổi tiếng thứ 14 trên thế giới.</p>
+                    <h2 class="h2">Nội dung Anime Vua hải tặc - One Piece</h2>
+                    <p>Tác phẩm kể về Monkey D. Luffy, một chàng trai trẻ tuổi được thần tượng thủa thơ ấu là Shanks tóc đỏ truyền cảm hứng để trở thành một hải tặc thực thụ, bắt đầu ra khởi tại East Blue để tìm kho báu gianh giá và trở thành Vua hải tặc. </p>
+                    <img src="	https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6090030698d96c54c4b714ec_one-piece-3.jpg" alt="">
+                      <p>Trên đường thành lập băng hải tặc Mũ Rơm, Luffy đã giải cứu và kết bạn với một kiếm sĩ tên là Roronoa Zoro, và cậu đã thành công kết nạp đoàn viên đầu tiên của mình, cùng nhau đi tìm kho báu One Piece. Tiếp đến họ gặp Nami - một hoa tiêu, sau đó là Usopp - một tay thiện xạ và sau đó là Vinsmoke Sanji - một đầu bếp.
+
+                        Họ có được một con tàu và đặt tên là Going Merry, và đối đầu với băng hải tặc khét tiếng của East Blue. Khi Luffy cùng đồng đội của cậu bắt đầu vào chuyến phiêu lưu mới, họ có thêm những thanh viên khác gồm Tony Tony Chopper - người tuần lộc và cũng là một bác sĩ, Nico Robin - một nhà khảo cổ học và là cựu sát thủ, Franky - một thợ đóng tàu cyborg, Brook - một nhạc công và Jinbei - một người cá và là một thành viên của Thất Vũ Hải.</p> 
+                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/609003161673430d433ecebb_one-piece-4.jpg" alt=""> 
+                    <p>Khi Going Merry bị hư hỏng quá nặng và không thể sửa chữa được, băng Mũ rơm đã mua một con tàu mới tên là Thousand Sunny. Họ cùng nhau phiêu lưu khắp bốn bể, chạm trán với nhiều băng hải tặc, thợ săn tiền thưởng, tổ chức tội phạm, quân cách mạng, đặc vụ và Chính phủ thế giới, cũng không ít kẻ thù và bạn bè khác.</p>
+                    <h2 class="h2">Các thành viên trong băng hải tặc Mũ Rơm</h2>
+                    <p>Băng Hải tặc Mũ Rơm là băng Hải Tặc do nhân vật chính Monkey D. Luffy làm thuyền trưởng, các thành viên băng Mũ Rơm cũng là các nhân vật chính trong câu chuyện. Số lượng thành viên trong băng Mũ Rơm lại tăng lên xuyên suốt diễn biến của truyện chính, và hiện tại có 9 thành viên.</p>
+                    <h3 class="h3">Monkey D. Luffy</h3>
+                    <p>Monkey D. Luffy là nhân vật chính của One Piece và cũng là thuyền trưởng của băng hải tặc Mũ Rơm. cậu có biệt danh là Luffy Mũ Rơm. Cậu bỗng trở thành người cao su sau khi vô tình ăn trái ác quỷ Gomu Gomu hệ Paramecia do Shanks lấy được. Luffy có ước mơ trở thành vua hải tặc, cậu cũng mang trong mình Haki Bá vương và thành thục cả ba loại Haki cũng như hoàn thiện các kỹ năng chiến đấu. Cậu là người vô tư, có phần hơi ngốc nghếch, cậu rất yêu quý đồng đội của mình. Sau cuộc chiến với tứ hoàng Big Mom, số tiền truy nã của cậu lên tới 1,5 tỷ Berry.</p>
+                    <h3  class="h3">Roronoa Zoro</h3>
+                    <p>Roronoa Zoro là kiếm sĩ trong băng hải tặc Mũ Rơm, anh là thành viên thứ hai của băng Mũ Rơm. Anh theo trường phái tam kiếm và có biệt danh là Thợ săn hải tặc Zoro, anh cũng là chủ sở hữu của ba thanh kiếm nằm trong các thanh quỷ kiếm của thế giới One Piece. Ước mơ của anh là hoàn thành lời hứa với người bạn thân quá cố, trở thành kiếm sĩ mạnh nhất thế giới. Zoro có thể sử dụng hai loại Haki thông thời. Số tiền truy nã của Zoro là 320 triệu Berry.</p>
+                    <h3  class="h3">Nami</h3>
+                    <p>Nami là Hoa Tiêu của băng hải tặc Mũ Rơm. Cô là thành viên thứ 3 của băng và có biệt danh là Miêu Tặc. Giấc mơ của Nami là hoàn thành bản đồ của toàn thế giới trong One Piece. Cô được đánh giá là thiên tài trong lĩnh vực hàng hải, cô thích tiền và có khả năng tự dự báo thời tiết. Vũ khí cô sử dụng có tên là Clima-Tact, có thể tạo ra các hiệu ứng thời tiết. Hiện cô đang được treo thưởng với giá 66 triệu Berry.</p>
+                    <h3  class="h3">Usopp</h3>
+                    <p>Usopp là xạ thủ của băng hải tặc Mũ Rơm và là thành viên thứ tư của băng. Biệt danh của Usopp là God. Nhân dạng trước đây Usopp dùng có tên trên lệnh truy nã là Sogeking - Vua bắn tỉa. Ước mơ của Usopp là trở thành chiến binh dũng cảm của biển cả, bên cạnh đó là một lần được tới Elbaf. Anh có tài thiện xạ bách phát bách trúng và nhiều tài lẻ khác. Hiện tại Usopp đang được treo thưởng với giá 200 triệu Berry.</p>
+                    <h3  class="h3">Sanji</h3>
+                    <p>Sanji là Đầu Bếp của băng hải tặc Mũ Rơm và cũng là thành viên thứ năm của băng. Anh có biệt danh là Sanji Chân Đen và có sở trường chiến đấu bằng đôi chân của mình. Ước mơ của Sanji là tìm thấy vùng biển huyền thoại All Blue. Anh là một người giỏi nấu nướng và đặc biệt mê gái. Anh có tên thật là Vinsmoke Sanji và là con trai thứ ba của gia tộc Vinsmoke thuộc vương quốc Germa ở North Blue. Anh có thể dùng hai loại Haki thông thường, số tiền treo thưởng hiện tại là 330 triệu Berry.</p>
+                    <h3  class="h3">Tony Tony Chopper</h3>
+                    <p>Tony Tony Chopper là thuyền y của băng hải tặc Mũ Rơm, cũng là thành viên thứ sáu và nhỏ nhất của băng. Cậu có biệt danh là Kẻ yêu kẹo bông, cậu sở hữu trái ác quỷ Hito Hito hệ Zoan. Chopper là một bác sĩ có tay nghề cao nhờ vào Rumble Ball, cậu có tới bảy nấc biến hoá thay vì ba dạng biến hoá như các trái hệ Zoan thông thường khác. Ước mơ của cậu là chữa được tất cả mọi loại bệnh trên đời. Hiện cậu được treo thưởng 100 Berry.</p>
+                    <h3  class="h3">Nico Robin</h3>
+                    <p>Nico Robin là nhà khảo cổ học của băng Mũ Rơm và là thành viên thứ 7 của băng hải tặc Mũ Rơm. Robin có biệt danh là đứa con của quỷ, cô sở hữu trái ác quỷ Hana Hana hệ Paramecia với khả năng mọc tay từ xa. Ước mơ của Robin là tìm ra Rio Poneglyph, khám phá ra toàn bộ lịch sử chân thực. Robin là người sống sót duy nhất của Ohara và cũng là người được biết đến với khả năng giải mã Poneglyph. Robin hiện được treo thưởng với giá 130 triệu Berry.</p>
+                    <h3  class="h3">Franky</h3>
+                    <p>Franky là thợ đóng tàu của băng hải tặc Mũ Rơm và cũng là thành viên thứ 8 của băng. Biệt danh của anh là Người máy Franky, anh là một thợ đóng tàu tài ba và nhiều tài lẻ khác. Franky là một cyborg sau khi tự cải tạo cơ thể và hiện nay là một thứ đã vượt qua mọi hiểu biết của con người. Ước mơ của anh là đóng một con tàu có thể vượt qua mọi sóng gió của biển cả và đến được tận cùng thế giới. Hiện Franky được treo thưởng với giá là 94 triệu Berry.</p>
+                    <h3  class="h3">Brook</h3>
+                    <p>Brook là Nhạc công của băng hải tặc Mũ Rơm và cũng là thành viên thứ 9 của băng. Brook có biệt danh là Brook Ngân Nga và là một nhạc công tài ba có thể chơi được nhiều loại nhạc cụ khác nhau. Brook theo trường phái kiếm tay và sử dụng một thanh kiếm dấu trong gậy của mình. Ông sở hữu trái ác quỷ Yomi Yomi  giúp cho Brook có thể hồi sinh lại một lần. Ước mơ của ông là có thể gặp lại chú cá voi Laboon mà băng Mũ Rơm đã gặp ở Mỏm Sinh đôi, Brook đã gửi Laboon ở đây nhiều năm về trước. Hiện tiền truy nã của ông là 83 triệu Berry.</p>
+                     <h3  class="h3">Jinbe</h3>
+                    <p>Jinbe là thuyền của băng hải tặc Mũ Rơm và cũng là thành viên thứ 10 của băng. Ông có biệt danh là Hiệp sĩ Biển Cả Jinbe. Ông từng là thuyền trưởng của băng hải tặc Mặt Trời và cựu Shichibukai của chính quyền. Jinbe là người cá mập voi xanh lớn, vóc dáng to cao như Sumo Nhật Bản và cũng là thành viên cao nhất băng. Ông là một người mạnh mẽ và có nhiều kinh nghiệm trong chiến đấu. Ông dễ dàng hạ gục Arlong, chặn được nắm đấm của Akainu và giao chiến với Mihawk. Ông có thể dùng hai loại Haki thông thường. Tiền truy nã của ông hiện tại sau khi từ chức Shichibukai là 438 triệu Berry.</p>
+                </div>
+            </div>
+            <div id="trailer" class="trailer-video-block">
+                <div></div>
+                <div></div>
+                <div  class="trailer-title">Official trailer:</div>
+                <div  class="review-video w-video w-embed">
+                    <iframe class="embedly-embed" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FvUSunPAO-nw%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DvUSunPAO-nw&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FvUSunPAO-nw%2Fhqdefault.jpg&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=youtube" width="854" height="480" scrolling="no" title="YouTube embed" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__left">
+            <div class="header__logo-text">
+                <b>HUYHIEU.</b>
+                <span>NET</span>
+            </div>
+            <p class="par">Nơi cập nhật những bộ phim mới hot nhất hiện nay.</p>
+        </div>
+        <div class="footer__right">
+            <span class="footer__right-name">Thông Tin</span>
+            <ul class="footer__right-list">
+                <li class="footer__right-item">
+                    <a href="#">Điều khoản sử dụng</a>
+                </li>
+                <li class="footer__right-item">
+                    <a href="#">Bản quyền và trách nhiệm nội dung</a>
+                </li>
+                <li class="footer__right-item">
+                    <a href="#">Admin: ads@huyhieu.net</a>
+                </li>
+                <li class="footer__right-item">
+                    <a href="#">Liên hệ QC: ads.movies888@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footer1">
+        <div class="footer1-left">
+            <p>
+                © 2022 Copyright
+                <a href="#">
+                    <b class="ft-name">huyhieu.net</b>
+                </a>
+                . All Rights reserved.
+            </p>
+        </div>
+        <div class="footer1-right">
+            <a href="#">Back to top
+                <i class="footer1-right__icon fas fa-angle-up"></i>
+            </a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+<!-- SLIDE SHOWS -->
+
+</html>
